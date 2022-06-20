@@ -23,4 +23,9 @@
 .footer__logo {
   color: var(--background-color);
   margin-bottom: 20px;
+  padding: 0;
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
 }

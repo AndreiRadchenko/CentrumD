@@ -1,5 +1,9 @@
 .subscribe-form {
-  display: flex;
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 .subscribe-form__email {
   height: 50px;
@@ -26,13 +30,18 @@
   }
 }
 .subscribe-form__button-primary {
-  // @extend .button-primary;
-  margin-left: 12px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 200px;
   height: 50px;
+  margin-top: 20px;
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 .subscribe-form__icon {
   fill: currentColor;
