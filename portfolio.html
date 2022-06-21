@@ -20,6 +20,37 @@
   </head>
   <body class="body">
     <header class="page-header">
+      <div class="mobile-menu__container" id="menu-container" data-menu>
+        <ul class="mobile-navigation">
+          <li class="mobile-navigation__item">
+            <a class="mobile-navigation__link" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a class="mobile-navigation__link current" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-navigation__item">
+            <a class="mobile-navigation__link" href="">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts__item">
+            <a class="mobile-contacts__link" href="tel:+380961111111"> +38 096 111 11 11</a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a href="" class="mobile-social__link">Instagram</a>
+            </li>
+            <li class="mobile-social__item"><a href="" class="mobile-social__link">Twitter</a></li>
+            <li class="mobile-social__item"><a href="" class="mobile-social__link">Facebook</a></li>
+            <li class="mobile-social__item"><a href="" class="mobile-social__link">Linkedin</a></li>
+          </ul>
+        </ul>
+      </div>
       <div class="page-header__container">
         <!-- navigation -->
         <nav class="navigation">
@@ -55,6 +86,7 @@
             >
           </li>
         </ul>
+        <!--  -------------- hamburger --------------  -->
         <button
           class="hamburger"
           type="button"
@@ -63,8 +95,14 @@
           data-menu-button
         >
           <svg class="hamburger__icon" width="40" height="40">
-            <use href="./images/icon-sprite-compress.svg#icon-hamburger"></use>
-            <use href="./images/icon-sprite-compress.svg#icon-close"></use>
+            <use
+              class="hamburger__icon-menu"
+              href="./images/icon-sprite-compress.svg#icon-hamburger"
+            ></use>
+            <use
+              class="hamburger__icon-close"
+              href="./images/icon-sprite-compress.svg#icon-close"
+            ></use>
           </svg>
         </button>
       </div>
@@ -395,5 +433,6 @@
 
       document.body.style.paddingTop = `${pageHeaderHeight}px`;
     </script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

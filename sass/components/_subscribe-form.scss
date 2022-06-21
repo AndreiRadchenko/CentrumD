@@ -7,7 +7,7 @@
 }
 .subscribe-form__email {
   height: 50px;
-  width: 358px;
+  width: 100%;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -27,6 +27,11 @@
   &:hover,
   &:focus {
     border-color: var(--accent-color);
+  }
+  @media screen and (min-width: $tablet) {
+    width: 358px;
+  }
+  @media screen and (min-width: $desktop) {
   }
 }
 .subscribe-form__button-primary {
