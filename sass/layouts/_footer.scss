@@ -4,7 +4,10 @@
   padding-bottom: 60px;
 }
 .footer__container {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
@@ -40,7 +43,7 @@
 }
 .subscribe__footer-group {
   margin-bottom: 0;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
   }
   @media screen and (min-width: $desktop) {
     margin-left: 93px;
