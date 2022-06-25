@@ -55,6 +55,12 @@ body.mobile-menu-open {
   overflow: hidden;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list, .social-list, .nav-menu, .header-contacts, .benefits, .specialization, .team, .clients, .gallery-filter, .gallery, .footer-contacts, .mobile-navigation, .mobile-contacts, .mobile-social {
   list-style: none;
   margin: 0;
@@ -906,16 +912,48 @@ body.mobile-menu-open {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--footer-background-color);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gradient)), to(var(--hero-gradient))), url("../images/squoosh_hero-Img.jpg");
-  background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url("../images/squoosh_hero-Img.jpg");
   text-align: center;
   letter-spacing: 0.06em;
+  background-color: var(--footer-background-color);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../images/header/header-mobile-img-480x400/img-min.jpg);
+  background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url(../images/header/header-mobile-img-480x400/img-min.jpg);
 }
 
-@media screen and (min-width: 768px) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    width: 768px;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../images/header/header-mobile-img-480x400/img@2x-min.jpg);
+    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url(../images/header/header-mobile-img-480x400/img@2x-min.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../images/header/header-tablet-img-768x400/img-min.jpg);
+    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url(../images/header/header-tablet-img-768x400/img-min.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../images/header/header-tablet-img-768x400/img@2x-min.jpg);
+    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url(../images/header/header-tablet-img-768x400/img@2x-min.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../images/header/header-desktop-img-1600x600/img-min.jpg);
+    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url(../images/header/header-desktop-img-1600x600/img-min.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--hero-gradient)), to(var(--hero-gradient))), url(../images/header/header-desktop-img-1600x600/img@2x-min.jpg);
+    background-image: linear-gradient(to right, var(--hero-gradient), var(--hero-gradient)), url(../images/header/header-desktop-img-1600x600/img@2x-min.jpg);
   }
 }
 
@@ -924,7 +962,7 @@ body.mobile-menu-open {
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
-    width: 1600px;
+    max-width: 1600px;
   }
 }
 
@@ -940,7 +978,7 @@ body.mobile-menu-open {
 
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -1153,11 +1191,6 @@ body.mobile-menu-open {
   .team-member + .team-member {
     margin-left: 30px;
   }
-}
-
-.team-member__image {
-  display: block;
-  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
