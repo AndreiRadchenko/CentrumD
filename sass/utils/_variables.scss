@@ -1,19 +1,23 @@
 // breackpoints
 $telephone: 480px;
 $tablet: 768px;
-$desktop: 1200px;
+$desktop: 1680px;
 
 :root {
   --main-text-color: #757575;
   --secondary-text-color: #212121;
-  --accent-color: #2196f3;
-  --primary-btn-hover-color: #188ce8;
+  --header-background: rgb(241, 242, 242);
+  --accent-color: rgba(255, 13, 13, 1);
+  --header-btn-hover: rgba(255, 13, 13, 0.8);
+  --find-form-background: rgba(255, 13, 13, 0.95);
+  --primary-btn: rgba(122, 185, 49, 1);
+  --primary-btn-hover: rgba(122, 185, 49, 0.9);
   --background-color: #ffffff;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --footer-background-color: #2f303a;
   --button-background-color: #f5f4fa;
   --gallery-border-color: #eeeeee;
-  --hero-gradient: rgba(47, 48, 58, 0.4);
+  --hero-gradient: rgba(0, 0, 0, 0.16);
   --social-color: #afb1b8;
   --footer-social: rgba(255, 255, 255, 0.1);
   --specialization-bkg: rgba(47, 48, 58, 0.8);

@@ -1,0 +1,100 @@
+.find-form__section {
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 0;
+    margin-top: -117px;
+  }
+}
+
+.find-form__wrapper {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.find-form {
+  position: relative;
+  z-index: 10;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1270px;
+    height: 364px;
+    background-color: var(--find-form-background);
+  }
+}
+
+.find-form__title {
+  margin: 0 auto;
+  font-size: 27px;
+  line-height: calc(32 / 27);
+  color: var(--background-color);
+  font-family: 'GoodTimes-Regular';
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: left;
+
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 27px;
+    line-height: calc(32 / 27);
+    margin-top: 30px;
+  }
+}
+
+.find-form__row {
+  display: flex;
+  column-gap: 40px;
+  margin-top: 40px;
+  &:nth-child(2) {
+    margin-top: 30px;
+  }
+}
+
+.find-form__row--buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 890px;
+}
+
+.find-form__input {
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: calc(16.8 / 14);
+  height: 32px;
+  border: 1px solid var(--modal-form-border-color);
+  border-radius: 1px;
+  -webkit-appearance: none;
+  appearance: none;
+  font: inherit;
+  @include customTransition(border-color);
+
+  &:focus,
+  &:active,
+  &:focus-visible {
+    border: 1px solid var(--input-border-active-color);
+    outline: none;
+  }
+  &.short {
+    width: 115px;
+  }
+  &.long {
+    width: 270px;
+  }
+  &.options {
+    width: 890px;
+  }
+}
